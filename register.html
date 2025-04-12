@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting System</title>
+    <link rel="stylesheet" href="../Css/style.css">
+</head>
+<body>
+    <style>
+        body{
+            background-image: url("../Photos/p1.png");
+            
+        }
+#address{
+    width: 30%;
+}
+#imagepart{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+}
+#role{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+}
+#role select{
+    padding: 10px;
+    border-radius: 5px;
+}
+    </style>
+    <center> 
+    <div id="headersection"> 
+    <h1>Online Voting System</h1>
+    </div>
+    <hr>
+    <div id="bodysection">
+    <form action="../API/register.php" method="post" enctype="multipart/form-data">
+        <h3>Register</h3>
+        <input type="text" name="name" placeholder="Enter Name">
+        <input type="number" name="mobile" placeholder="Enter mobile"><br><br>
+        <input type="password" name="password" placeholder="Enter Password">
+        <input type="password" name="cpassword" placeholder="Enter Conform Password"><br><br>
+        <input id="address" type="text" name="address" placeholder="Enter Address"><br><br>
+         
+        <div id="imagepart"> 
+        Upload Image: <input type="file" name="photo">
+        </div><br>
+        <div id="role"> 
+         Select Your Role: <select name="role"><br><br>
+                            <option value="1">Voter</option>
+                            <option value="2">Party</option>
+                        </select>
+        </div>
+        
+        <br>
+        <button style="padding: 5px;
+        border-radius: 5px;
+        background-color: blue;
+        color: white;
+        font-size: 15px;
+        ">Register</button><br><br>
+
+        Already User? <a href="../index.html">Login</a>
+    </form>
+    </div>
+    </center>
+</body>
+</html>
